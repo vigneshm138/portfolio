@@ -1,34 +1,45 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { RiMenu3Line } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
-  const [openAndCloseNavbar, setOpenAndCloseNavbar] = useState(false);
+  const [openclosenavbar, setopenclosenavbar] = useState(false);
+
   return (
     <div className="navbar">
-      <div className="myName">
-        <div className="myName-box"></div>
-        <p>vikcy</p>
+      <div className="navbar-logo">
+        <h3>vicky</h3>
       </div>
-      <div className="navbar-links">
-        <button onClick={() => setOpenAndCloseNavbar(true)}>Menu</button>
-        <ul style={openAndCloseNavbar ? { top: "0%" } : { top: "-100%" }}>
-          <button onClick={() => setOpenAndCloseNavbar(false)}>close</button>
+      <div
+        className="navbar-links"
+        style={openclosenavbar ? { top: "0" } : { top: "-390px" }}
+      >
+        <button
+          className="closeNavbar"
+          onClick={() => setopenclosenavbar(false)}
+        >
+          <IoClose className="navbar-icons" />
+        </button>
+        <ul>
           <li>
-            <div>
-              <a href="#Home">Home</a>
-            </div>
+            <a href="#home">home</a>
           </li>
           <li>
-            <div>
-              <a href="#Aboutme">About me</a>
-            </div>
+            <a href="#about">about me</a>
           </li>
           <li>
-            <div>
-              <a href="#projects">projects</a>
-            </div>
+            <a href="./project">project</a>
+          </li>
+          <li>
+            <a href="./contact">contact</a>
           </li>
         </ul>
+      </div>
+      <div className="menuDiv">
+        <button onClick={() => setopenclosenavbar(true)}>
+          <RiMenu3Line className="navbar-icons" />
+        </button>
       </div>
     </div>
   );
