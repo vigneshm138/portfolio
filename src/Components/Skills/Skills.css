@@ -1,0 +1,69 @@
+.skills{
+    margin: 30px 0;
+}
+.skills h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000081;
+  font-size: 22px;
+}
+.skills .skill-boxs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+.skills .skill-boxs .skill-box {
+  width: 140px;
+  text-align: center;
+  padding: 20px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s linear;
+  background: transparent;
+}
+.skills .skill-boxs .skill-box:nth-child(1):hover {
+  background: linear-gradient(to top, #ff4b00, #ececf1);
+}
+
+.skills .skill-boxs .skill-box:nth-child(2):hover {
+  background: linear-gradient(to top, #1572b6, #ececf1);
+}
+.skills .skill-boxs .skill-box:nth-child(3):hover {
+  background: linear-gradient(to top, #7952b3, #ffffff);
+}
+.skills .skill-boxs .skill-box:nth-child(4):hover {
+  background: linear-gradient(to top, #ffdf00, #ffffff);
+}
+.skills .skill-boxs .skill-box:nth-child(5):hover {
+  background: linear-gradient(to top, #61dafb9a, #ffffff);
+}
+.skills .skill-boxs .skill-box:nth-child(6):hover {
+  background: linear-gradient(to top, #599636, #ffffff);
+}
+.skills .skill-boxs .skill-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.skills .skill-boxs .skill-box p:nth-child(2) {
+  /* color: black; */
+  font-weight: 900;
+}
+
+.skills .skill-boxs .skill-box p:nth-child(3) {
+  background-color: black;
+  font-weight: 900;
+  width: fit-content;
+  color: white;
+  margin: auto;
+  font-size: 8px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
